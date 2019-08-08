@@ -28,7 +28,7 @@ new Vue({
   components: {
     Flickity
   },
-  
+
   data() {
     return {
       flickityOptions: {
@@ -36,17 +36,17 @@ new Vue({
         prevNextButtons: false,
         pageDots: false,
         wrapAround: true
-        
+        bgLazyLoad: false // Set to true, or a number to load adjacent cells
         // any options from Flickity can be used
       }
     }
   },
-  
+
   methods: {
     next() {
       this.$refs.flickity.next();
     },
-    
+
     previous() {
       this.$refs.flickity.previous();
     }
